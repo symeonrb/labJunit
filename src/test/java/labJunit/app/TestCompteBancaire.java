@@ -18,4 +18,16 @@ public class TestCompteBancaire {
       assertThrows(IllegalArgumentException.class, () -> cb.debiterSolde(-15));
   }
   
+	@Test
+  void testCrediterSoldeOk() {
+      CompteBancaire cb = new CompteBancaire(1000);
+      assertEquals(1015, cb.crediterSolde(15));
+  }
+
+	@Test
+  void testCrediteroldeThrow() {
+      CompteBancaire cb = new CompteBancaire(1000);
+      assertThrows(IllegalArgumentException.class, () -> cb.crediterSolde(-15));
+  }
+  
 }
