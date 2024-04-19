@@ -17,4 +17,5 @@ class TestCalculatrice {
 		Calculatrice c = new Calculatrice();
 		assertEquals(6,c.produit(2, 3));
 	}
+
 }
