@@ -29,5 +29,5 @@ public class TestCompteBancaire {
       CompteBancaire cb = new CompteBancaire(1000);
       assertThrows(IllegalArgumentException.class, () -> cb.crediterSolde(-15));
   }
-  
+
 }
